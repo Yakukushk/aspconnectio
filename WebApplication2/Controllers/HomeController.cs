@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SNSExample.Models;
 using System.Diagnostics;
-using WebApplication2.Models;
+
 
 namespace WebApplication2.Controllers
 {
