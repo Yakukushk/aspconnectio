@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EVzGlwcs0qlD0ehJQXwhJAN/j1AhZgGfw1WzvzBSMXSMj6xzFuvG9GAOvscPQk+yuMOlWhSYht3brCIFaF02ow==",
+  "dgSpecHash": "R00Cqf6nAZ2WYB2P0062uCvI6xmuh4l6LaMdxFKUQTvI5xNvEARfrT+nHruuTe+KbJ2OY3LqrOuvijpetVNWdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\git\\aspconnectio\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
