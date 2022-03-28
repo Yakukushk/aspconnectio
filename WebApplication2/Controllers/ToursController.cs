@@ -5,8 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using ClosedXML.Excel;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+
 
 namespace WebApplication2.Controllers
 {
@@ -149,5 +151,94 @@ namespace WebApplication2.Controllers
         {
             return _context.Tour.Any(e => e.Id == id);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Import(IFormFile fileExcel)
+        {
+            if (ModelState.IsValid)
+            {
+                if (fileExcel != null)
+                {
+                    using (var stream = new FileStream(fileExcel.FileName, FileMode.Create))
+                    {
+                        await fileExcel.CopyToAsync(stream);
+                        using (XLWorkbook workbook = new XLWorkbook(stream, XLEventTracking.Disabled))
+                        {
+                            foreach (IXLWorksheet worksheet in workbook.Worksheets)
+                            {
+                                Tour newlist;
+                                var c = (from list in _context.Tour
+                                         where list.Name.Contains(worksheet.Name)
+                                         select list).ToList();
+                                if (c.Count > 0)
+                                {
+                                    newlist = c[0];
+                                }
+                                else
+                                {
+                                    newlist = new Tour();
+                                    newlist.Name = worksheet.Name;
+
+                                    newlist.Info = "from EXCEl";
+                                    _context.Tour.Add(newlist);
+                                }
+                                foreach (IXLRow row in worksheet.RowsUsed().Skip(1))
+                                {
+                                    try
+                                    {
+                                        Tour tour = new Tour();
+                                        tour.Name = row.Cell(1).Value.ToString();
+                                        tour.Info = row.Cell(6).Value.ToString();
+                                        tour = newlist;
+                                        _context.Tour.Add(tour);
+
+
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        Console.WriteLine(e.ToString());
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        public ActionResult Export()
+        {
+            using (XLWorkbook workbook = new XLWorkbook(XLEventTracking.Disabled))
+            {
+                var lists = _context.Tour.ToList();
+                foreach (var c in lists)
+                {
+                    var worksheet = workbook.Worksheets.Add(c.Name);
+                    worksheet.Cell("A1").Value = "Name";
+                    worksheet.Cell("B1").Value = "City";
+                    worksheet.Cell("C1").Value = "City";
+                    worksheet.Cell("D1").Value = "Price";
+                    worksheet.Cell("E1").Value = "Price";
+                    worksheet.Cell("F1").Value = "Info";
+                    worksheet.Row(1).Style.Font.Bold = true;
+                    //var tours = c.Tour.ToList();
+
+                }
+                using (var stream = new MemoryStream())
+                {
+                    workbook.SaveAs(stream);
+                    stream.Flush();
+                    return new FileContentResult(stream.ToArray(),
+                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+                    {
+                        FileDownloadName = $"library_{DateTime.UtcNow.ToShortDateString()}.xlsx"
+                    };
+                }
+            }
+        }
     }
 }
+    
+

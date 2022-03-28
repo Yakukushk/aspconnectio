@@ -70,5 +70,25 @@
   </head>
   <body>
     <div id="regions_div" style="width: 900px; height: 500px;"></div>
+
+  </body>
+  <body>
+    <div id="Excel">
+        <h3>Choice excel file -></h3>
+        @using (Html.BeginForm("Import", "Tours", FormMethod.Post, new {enctype="multipart/form-data", id="frm-excel" }))
+        {
+            <div>
+                Download Excel-file:
+                <input type= "file" name="fileExcel"id="fileExcel"/>
+                <div>
+                    <input type="submit" value="DownLoad"/>
+                </div>
+            </div>
+        }
+    </div>
+    <div>
+        <h3>Download </h3>
+        <a asp-action="Export">Donwload</a>
+    </div>
   </body>
 </html>
