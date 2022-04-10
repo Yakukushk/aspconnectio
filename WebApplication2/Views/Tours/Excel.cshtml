@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebApplication2.Models.Tour>
+@{
+    ViewData["Title"] = "Excel";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <html>
+    <head>
+    </head>
+    <body>
+    <div id="Excel">
+        <h3>Choice excel file -></h3>
+        @using (Html.BeginForm("Import", "Tours", FormMethod.Post, new {enctype="multipart/form-data", id="frm-excel" }))
+        {
+            <div>
+                Download Excel-file:
+                <input type= "file" name="fileExcel"id="fileExcel"/>
+                <div>
+                    <input type="submit" value="DownLoad"/>
+                </div>
+            </div>
+        }
+    </div>
+    <div id ="Export ">
+        <style>
+        .Export{
+        padding-bottom: 2px;
+        }
+        </style>
+        <h3>Download </h3>
+        <a asp-action="Export">Donwload</a>
+    </div>
+    
+    </body>
+    </html>
+

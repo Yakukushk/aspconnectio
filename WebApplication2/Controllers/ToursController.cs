@@ -20,6 +20,10 @@ namespace WebApplication2.Controllers
         {
             _context = context;
         }
+        public static int Print(string str) {
+            Console.WriteLine(str);
+            return 0;
+        }
 
         // GET: Tours
         public async Task<IActionResult> Index()
@@ -50,13 +54,17 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+        //GET: Tours/Excel
+        public IActionResult Excel() {
+        return View();
+        }
 
         // POST: Tours/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price")] Tour tour)
+        public async Task<IActionResult> Create([Bind("Id,Name,Price,Info")] Tour tour)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +96,7 @@ namespace WebApplication2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price")] Tour tour)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Price, Info")] Tour tour)
         {
             if (id != tour.Id)
             {
@@ -212,19 +220,25 @@ namespace WebApplication2.Controllers
         {
             using (XLWorkbook workbook = new XLWorkbook(XLEventTracking.Disabled))
             {
-                var lists = _context.Tour.ToList();
-                foreach (var c in lists)
+                try
                 {
-                    var worksheet = workbook.Worksheets.Add(c.Name);
-                    worksheet.Cell("A1").Value = "Name";
-                    worksheet.Cell("B1").Value = "City";
-                    worksheet.Cell("C1").Value = "City";
-                    worksheet.Cell("D1").Value = "Price";
-                    worksheet.Cell("E1").Value = "Price";
-                    worksheet.Cell("F1").Value = "Info";
-                    worksheet.Row(1).Style.Font.Bold = true;
-                    //var tours = c.Tour.ToList();
+                    var lists = _context.Tour.ToList();
+                    foreach (var c in lists)
+                    {
+                        var worksheet = workbook.Worksheets.Add(c.Name);
+                        worksheet.Cell("A1").Value = "Name";
+                        worksheet.Cell("B1").Value = "City";
+                        worksheet.Cell("C1").Value = "City";
+                        worksheet.Cell("D1").Value = "Price";
+                        worksheet.Cell("E1").Value = "Price";
+                        worksheet.Cell("F1").Value = "Info";
+                        worksheet.Row(1).Style.Font.Bold = true;
+                        var tours = c.Name.ToList();
 
+                    }
+                }
+                catch (Exception ex) {
+                    Print(ex.ToString());
                 }
                 using (var stream = new MemoryStream())
                 {

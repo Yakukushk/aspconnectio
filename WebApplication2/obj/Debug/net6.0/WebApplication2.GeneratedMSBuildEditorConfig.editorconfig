@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Administrator\source\repos\git\1.3\aspconnectio\WebApplication2
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Administrator/source/repos/git/1.3/aspconnectio/WebApplication2/Views/BookingController1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0NvbnRyb2xsZXIxXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Administrator/source/repos/git/1.3/aspconnectio/WebApplication2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +49,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Administrator/source/repos/git/1.3/aspconnectio/WebApplication2/Views/Tours/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Administrator/source/repos/git/1.3/aspconnectio/WebApplication2/Views/Tours/Excel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRXhjZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrator/source/repos/git/1.3/aspconnectio/WebApplication2/Views/Tours/Index.cshtml]

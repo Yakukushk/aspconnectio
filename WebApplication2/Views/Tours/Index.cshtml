@@ -1,12 +1,12 @@
 ﻿@model IEnumerable<WebApplication2.Models.Tour>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Main Menu";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
+<h1>Homepage</h1>
+<div>@Html.ActionLink("Excels", "Excel")</div>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+             @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
@@ -30,7 +30,7 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
-            </td>
+            </td> 
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
@@ -40,55 +40,10 @@
 }
     </tbody>
 </table>
-<html>
-  <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {
-        'packages':['geochart'],
-      });
-      google.charts.setOnLoadCallback(drawRegionsMap);
 
-      function drawRegionsMap() {
-        var data = google.visualization.arrayToDataTable([
-          ['Country', 'Popularity'],
-          ['Germany', 200],
-          ['United States', 300],
-          ['Brazil', 400],
-          ['Canada', 500],
-          ['France', 600],
-          ['Ukraine', 700]
-        ]);
 
-        var options = {};
 
-        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+<div class="d-flex flex-column justify-content-center w-100 h-100">
 
-        chart.draw(data, options);
-      }
-    </script>
-  </head>
-  <body>
-    <div id="regions_div" style="width: 900px; height: 500px;"></div>
-
-  </body>
-  <body>
-    <div id="Excel">
-        <h3>Choice excel file -></h3>
-        @using (Html.BeginForm("Import", "Tours", FormMethod.Post, new {enctype="multipart/form-data", id="frm-excel" }))
-        {
-            <div>
-                Download Excel-file:
-                <input type= "file" name="fileExcel"id="fileExcel"/>
-                <div>
-                    <input type="submit" value="DownLoad"/>
-                </div>
-            </div>
-        }
-    </div>
-    <div>
-        <h3>Download </h3>
-        <a asp-action="Export">Donwload</a>
-    </div>
-  </body>
-</html>
+	
+</div>
