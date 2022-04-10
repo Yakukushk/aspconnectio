@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using WebApplication2;
+using WebApplication2.Models;
 
 namespace WebApplication2.Models
 {
@@ -36,5 +37,7 @@ namespace WebApplication2.Models
         public DbSet<WebApplication2.Models.Client1> Client1 { get; set; }
 
         public DbSet<WebApplication2.Models.Tour> Tour { get; set; }
+
+        public DbSet<WebApplication2.Models.ImageModel> ImageModel { get; set; }
     }
 }

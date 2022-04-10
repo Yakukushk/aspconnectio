@@ -15,10 +15,12 @@ namespace WebApplication2.Controllers
     public class ToursController : Controller
     {
         private readonly DBLibraryContext _context;
+        private readonly IWebHostEnvironment host;
 
-        public ToursController(DBLibraryContext context)
+        public ToursController(DBLibraryContext context, IWebHostEnvironment host)
         {
             _context = context;
+            this.host = host;
         }
         public static int Print(string str) {
             Console.WriteLine(str);
@@ -64,26 +66,40 @@ namespace WebApplication2.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Price,Info")] Tour tour)
+        public async Task<IActionResult> Create([Bind("Id,Price,Name,Info,ImageFile")] Tour tour)
         {
             if (ModelState.IsValid)
             {
+                string wwwRootPath = this.host.WebRootPath;
+                string fileName = Path.GetFileNameWithoutExtension(tour.ImageFile.FileName);
+                string ExtensionFile = Path.GetExtension(tour.ImageFile.FileName);
+
+                tour.Title = fileName = fileName + DateTime.Now.ToString("yymmssfff") + ExtensionFile;
+                string path = Path.Combine(wwwRootPath + "/Image/", fileName);
+
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    await tour.ImageFile.CopyToAsync(fileStream);
+                }
                 _context.Add(tour);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(tour);
+          
         }
 
         // GET: Tours/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();
             }
 
             var tour = await _context.Tour.FindAsync(id);
+
             if (tour == null)
             {
                 return NotFound();
@@ -150,6 +166,7 @@ namespace WebApplication2.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var tour = await _context.Tour.FindAsync(id);
+            
             _context.Tour.Remove(tour);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

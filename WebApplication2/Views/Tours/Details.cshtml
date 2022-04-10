@@ -27,6 +27,11 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Info)
+        </dd> <dt class = "col-sm-2">
+            Uploading Image
+        </dt>
+        <dd class = "col-sm-10">
+             <img src = "@("~/Image/" + Model.Title )" asp-append-version="true" width="350px" height="300px"/>
         </dd>
     </dl>
 </div>
