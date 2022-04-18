@@ -1,0 +1,27 @@
+﻿@model WebApplication2.ModelView.LoginViewModel
+
+
+
+<form method="post" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl" style="text-align: center" >
+    <div asp-validation-summary="ModelOnly"></div>
+        <h1>Login</h1>
+    <div >
+
+        <label asp-for="Email"></label><br />
+        <input asp-for="Email"/>
+        <span asp-validation-for="Email"></span>
+
+    </div>
+    <div>
+          <label asp-for="Password"></label><br />
+        <input asp-for="Password"/>
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div>
+        <label asp-for="RememberMe"></label><br />
+        <input asp-for="RememberMe" />
+    </div>
+    <div >
+        <input type="submit" value="Enter" />
+    </div>
+</form>

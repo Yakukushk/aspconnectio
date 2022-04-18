@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FVSCQrGBIUc719YSuiWCNJyxbCWVI2nyrB7Di0Dr/bc=",
+  "Hash": "IghU1ul3hxlKexFFRyYvFITyeiigT5eCZZ+zTOaIszw=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -187,6 +187,40 @@
       "OriginalItemSpec": "wwwroot\\Image\\photo_2022-02-14_11-39-07224445525.jpg"
     },
     {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\Image\\photo_2022-02-24_22-42-42222200133.jpg",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Image/photo_2022-02-24_22-42-42222200133.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\photo_2022-02-24_22-42-42222200133.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\Image\\photo_2022-02-24_22-42-42222214367.jpg",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Image/photo_2022-02-24_22-42-42222214367.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\photo_2022-02-24_22-42-42222214367.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\Image\\photo_2022-03-15_16-54-00221839065.jpg",
       "SourceId": "WebApplication2",
       "SourceType": "Discovered",
@@ -355,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\зображення_2022-04-10_203542223544499.png"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\Image\\зображення_2022-04-10_205339225341229.png",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Image/зображення_2022-04-10_205339225341229.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\зображення_2022-04-10_205339225341229.png"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\js\\site.js",

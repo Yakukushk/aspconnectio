@@ -8,12 +8,15 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using ClosedXML.Excel;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication2.Controllers
 {
+   // [Authorize(Roles = "admin, user")]
     public class ToursController : Controller
     {
+       
+
         private readonly DBLibraryContext _context;
         private readonly IWebHostEnvironment host;
 
