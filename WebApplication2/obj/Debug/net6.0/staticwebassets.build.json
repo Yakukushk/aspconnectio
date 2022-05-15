@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IghU1ul3hxlKexFFRyYvFITyeiigT5eCZZ+zTOaIszw=",
+  "Hash": "BpFOJbQ1eqDBY82NmTJlZ3NkKFy3qj8BFidF+APxC34=",
   "Source": "WebApplication2",
   "BasePath": "_content/WebApplication2",
   "Mode": "Default",
@@ -406,6 +406,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Image\\зображення_2022-04-10_205339225341229.png"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\Image\\зображення_2022-04-21_223042284223044242.png",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "Image/зображення_2022-04-21_223042284223044242.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Image\\зображення_2022-04-21_223042284223044242.png"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\jquery\\jquery.min.js",
+      "SourceId": "WebApplication2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\",
+      "BasePath": "_content/WebApplication2",
+      "RelativePath": "jquery/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\jquery\\jquery.min.js"
     },
     {
       "Identity": "C:\\Users\\Administrator\\source\\repos\\git\\1.3\\aspconnectio\\WebApplication2\\wwwroot\\js\\site.js",

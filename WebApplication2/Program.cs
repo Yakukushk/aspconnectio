@@ -1,8 +1,8 @@
 using WebApplication2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+using WebApplication2.ModelView;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +15,21 @@ builder.Services.AddDbContext<DBLibraryContext>(option => option.UseSqlServer( /
 builder.Services.AddDbContext<IdentityContext>(option => option.UseSqlServer( // connection for identity connection which using builders 
     builder.Configuration.GetConnectionString("identityConnection")));
 builder.Services.AddControllersWithViews();
-builder.Services.AddIdentity<Users, IdentityRole>().AddEntityFrameworkStores<IdentityContext>();
+builder.Services.AddScoped<IExcel, ExcelCollection>();
+builder.Services.AddIdentity<Users, IdentityRole>(opt =>
+{
+    opt.Password.RequiredLength = 5;   // минимальная длина
+    opt.Password.RequireNonAlphanumeric = false;   // требуются ли не алфавитно-цифровые символы
+    opt.Password.RequireLowercase = false; // требуются ли символы в нижнем регистре
+    opt.Password.RequireUppercase = false; // требуются ли символы в верхнем регистре
+    opt.Password.RequireDigit = false; // требуются ли цифры
+}).AddEntityFrameworkStores<IdentityContext>();
+
 var app = builder.Build();
 using (var scope = app.Services.CreateScope()) {
+
 var services = scope.ServiceProvider;
+   
     try
     {
         var userManager = services.GetRequiredService<UserManager<Users>>();
@@ -31,6 +42,7 @@ var services = scope.ServiceProvider;
         logger.LogError(ex, "An error occurred while seeding the database" + DateTime.Now.ToString());
     }
 }
+
 
     // Configure the HTTP request pipeline.
     if (!app.Environment.IsDevelopment())

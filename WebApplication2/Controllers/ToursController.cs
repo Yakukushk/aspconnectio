@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication2.Controllers
 {
-   // [Authorize(Roles = "admin, user")]
+  // [Authorize(Roles = "admin, user")]
     public class ToursController : Controller
     {
        
@@ -212,13 +212,32 @@ namespace WebApplication2.Controllers
                                 }
                                 foreach (IXLRow row in worksheet.RowsUsed().Skip(1))
                                 {
-                                    try
-                                    {
-                                        Tour tour = new Tour();
-                                        tour.Name = row.Cell(1).Value.ToString();
-                                        tour.Info = row.Cell(6).Value.ToString();
-                                        tour = newlist;
-                                        _context.Tour.Add(tour);
+                                    try { 
+                                    Info info = new Info();
+                                    info.Country = row.Cell(1).Value.ToString();
+                                    info.City = row.Cell(6).Value.ToString();
+                                        info.Tour = newlist;
+                                        _context.Info.Add(info);
+                                        for (int i = 2; i <= 5; i++) {
+                                            if (row.Cell(i).Value.ToString().Length > 0) {
+                                                Company company;
+                                                var a = (from aut in _context.Companies where aut.Name.Contains(row.Cell(i).Value.ToString()) select aut).ToList();
+                                                if (a.Count > 0)
+                                                {
+                                                    company = a[0];
+                                                }
+                                                else {
+                                                    company = new Company();
+                                                    company.Name = row.Cell(i).Value.ToString();
+                                                    company.Info = "from EXCEL";
+                                                    _context.Add(company);
+                                                }
+                                                
+
+                                            }
+                                        }
+                                    
+
 
 
                                     }
@@ -235,6 +254,7 @@ namespace WebApplication2.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
 
         public ActionResult Export()
         {
@@ -253,11 +273,25 @@ namespace WebApplication2.Controllers
                         worksheet.Cell("E1").Value = "Price";
                         worksheet.Cell("F1").Value = "Info";
                         worksheet.Row(1).Style.Font.Bold = true;
-                        var tours = c.Name.ToList();
+                        var books = c.Info.ToList();
+                        for (int i = 0; i < books.Count; i++) {
+                            worksheet.Cell(i + 2, 1).Value = books[i];
+                            worksheet.Cell(i + 2,7).Value = books[i];
+                            var ab = _context.Companies.Where(a => a.id == books[i]).Include("Tour").ToList();
+                            int j = 0;
+                            foreach (var a in ab) {
+                                if (j < 5) {
+                                    worksheet.Cell(i + 2, j + 2).Value = a.Name;
+                                    j++;
+                                }
+                            }
+                        }
+                        
 
                     }
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
                     Print(ex.ToString());
                 }
                 using (var stream = new MemoryStream())
@@ -271,7 +305,8 @@ namespace WebApplication2.Controllers
                     };
                 }
             }
-        }
+
+            }
     }
 }
     

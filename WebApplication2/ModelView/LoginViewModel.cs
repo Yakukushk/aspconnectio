@@ -4,14 +4,17 @@ namespace WebApplication2.ModelView
     public class LoginViewModel
     {
         [Required]
-        [Display(Name ="Email")]
+        [Display(Name = "Email")]
         public string Email { get; set; }
+
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name ="Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
-        [Display(Name ="Remember")]
+
+        [Display(Name = "Запомнить?")]
         public bool RememberMe { get; set; }
+
         public string ReturnUrl { get; set; }
     }
 }

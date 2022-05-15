@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using WebApplication2.Models;
 using WebApplication2.ModelView;
 
@@ -11,7 +10,8 @@ namespace WebApplication2.Controllers
     {
         private readonly UserManager<Users> _userManager;
         private readonly SignInManager<Users> _signManager;
-        public AccountController(UserManager<Users> userManager, SignInManager<Users> signManager) { //constructor for async controllers with accounts manager 
+        public AccountController(UserManager<Users> userManager, SignInManager<Users> signManager)
+        { //constructor for async controllers with accounts manager 
             _userManager = userManager;
             _signManager = signManager;
         }
@@ -24,18 +24,22 @@ namespace WebApplication2.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Registration(RegisterViewModel model) { // async each others users 
-            if (ModelState.IsValid) {
-            Users user = new Users {Email = model.Email, UserName = model.Email, Year=model.Year};// add users 
+        public async Task<IActionResult> Registration(RegisterViewModel model)
+        { // async each others users 
+            if (ModelState.IsValid)
+            {
+                Users user = new Users { Email = model.Email, UserName = model.Email, Year = model.Year };// add users 
                 var result = await _userManager.CreateAsync(user, model.Password); // give results 
-                if (result.Succeeded) { //conditionals in order to success 
-                await _signManager.SignInAsync(user,false); //install cookie for web 
+                if (result.Succeeded)
+                { //conditionals in order to success 
+                    await _signManager.SignInAsync(user, false); //install cookie for web 
                     return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    foreach (var error in result.Errors) { // if we have any issues and fix it 
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    foreach (var error in result.Errors)
+                    { // if we have any issues and fix it 
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
 
                 }
@@ -44,18 +48,21 @@ namespace WebApplication2.Controllers
             return View(model);
         }
         [HttpGet]
-        public IActionResult Login(string returnUrl = null) {
-        return View(new LoginViewModel {ReturnUrl = returnUrl });
+        public IActionResult Login(string returnUrl = null!)
+        {
+            return View(new LoginViewModel { ReturnUrl = returnUrl });
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
-        { // action task for async data 
+        {
             if (ModelState.IsValid)
             {
-                var result = await _signManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false); // result sign in 
+                var result =
+                    await _signManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
                 if (result.Succeeded)
                 {
+                    // перевіряємо, чи належить URL додатку
                     if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                     {
                         return Redirect(model.ReturnUrl);
@@ -67,21 +74,21 @@ namespace WebApplication2.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", "Incorrect!");
+                    ModelState.AddModelError("Password", "Incorrect Password or UserName");
                 }
-
             }
             return View(model);
         }
-            [HttpPost]
-            [ValidateAntiForgeryToken]
-            
-            public async Task<IActionResult> Logout()
-            {
-            await _signManager.SignOutAsync();
-                return RedirectToAction("Index", "Home");
-            }
-      
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            // видаляємо аутентифікаційні куки
+            _signManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
     }
-    }
+}
+
+
 

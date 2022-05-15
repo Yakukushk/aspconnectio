@@ -37,6 +37,9 @@ namespace WebApplication2.Models
         public DbSet<WebApplication2.Models.Client1> Client1 { get; set; }
 
         public DbSet<WebApplication2.Models.Tour> Tour { get; set; }
+        public DbSet<WebApplication2.Models.Company> Companies { get; set; }
+        public DbSet<WebApplication2.Models.Info> Info { get; set; }
+        public DbSet<WebApplication2.Models.Excels> Excels { get; set; }
 
         public DbSet<WebApplication2.Models.ImageModel> ImageModel { get; set; }
     }

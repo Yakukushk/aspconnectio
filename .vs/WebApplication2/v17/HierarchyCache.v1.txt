@@ -3,20 +3,29 @@ i:{00000000-0000-0000-0000-000000000000}:WebApplication2.sln
 ++WebApplication2
 i:{00000000-0000-0000-0000-000000000000}:WebApplication2
 ++Connected Services 
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1529
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1669
 ++Properties
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\properties\
-++launchSettings.json
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\properties\launchsettings.json
 ++wwwroot
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\
 ++Зависимости
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1528
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1668
 ++Controllers
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\
+++AccountController.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\accountcontroller.cs
+++BookingController1.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\bookingcontroller1.cs
+++DiagramController.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\diagramcontroller.cs
+++ExcelsController.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\excelscontroller.cs
 ++HomeController.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\homecontroller.cs
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\homecontroller.cs
+++ImageModelsController.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\imagemodelscontroller.cs
+++RolesController.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\rolescontroller.cs
 ++ToursController.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\tourscontroller.cs
 ++ValuesController.cs
@@ -27,38 +36,99 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\client.cs
 ++Client1.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\client1.cs
+++Company.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\company.cs
+++CustomPasswordValidator.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\custompasswordvalidator.cs
 ++DBLibraryContext.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\dblibrarycontext.cs
 ++ErrorViewModel.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\errorviewmodel.cs
+++Excels.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\excels.cs
+++IdentityContext.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\identitycontext.cs
+++ImageModel.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\imagemodel.cs
+++Info.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\info.cs
 ++Tour.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\tour.cs
 ++TourClient.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\tourclient.cs
 ++TourClient1.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\tourclient1.cs
+++Users.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\users.cs
+++ModelView
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\
+++ExcelCollection.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\excelcollection.cs
+++IExcel.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\iexcel.cs
+++LoginViewModel.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\loginviewmodel.cs
+++RegisterViewModel.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\registerviewmodel.cs
+++RoleViewModel.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\modelview\roleviewmodel.cs
 ++Views
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\
+++Account
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\account\
+++Index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\bookingcontroller1\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\diagram\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\home\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\roles\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\index.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\excels\index.cshtml
+++Login.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\account\login.cshtml
+++Registration.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\account\registration.cshtml
+++BookingController1
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\bookingcontroller1\
+++Diagram
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\diagram\
+++Excels
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\excels\
 ++Home
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\home\
-++Shared
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\
-++Tours
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\
+++Privacy.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\home\privacy.cshtml
+++ImageModels
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\
 ++Create.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\create.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\create.cshtml
 ++Delete.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\delete.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\delete.cshtml
 ++Details.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\details.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\details.cshtml
 ++Edit.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\imagemodels\edit.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\roles\edit.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\edit.cshtml
+++Roles
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\roles\
+++UserList.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\roles\userlist.cshtml
+++Shared
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\
+++_Layout.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\error.cshtml
+++Tours
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\
 ++Excel.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\excel.cshtml
-++Index.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\tours\index.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\home\index.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\bookingcontroller1\index.cshtml
 ++_ViewImports.cshtml
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\_viewimports.cshtml
 ++_ViewStart.cshtml
@@ -67,22 +137,46 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\.gitattributes
 ++appsettings.json
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\appsettings.json
+++library_01.05.2022 (1).xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022 (1).xlsx
+++library_01.05.2022 (2).xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022 (2).xlsx
+++library_01.05.2022 (4).xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022 (4).xlsx
+++library_01.05.2022 (6).xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022 (6).xlsx
+++library_01.05.2022 (7).xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022 (7).xlsx
+++library_01.05.2022.xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_01.05.2022.xlsx
+++library_02.05.2022.xlsx
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\library_02.05.2022.xlsx
 ++Program.cs
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\program.cs
 ++README.md
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\readme.md
+++RoleInitializer.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\roleinitializer.cs
+++Startup.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\startup.cs
 ++Лист Microsoft Excel.xlsx
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\лист microsoft excel.xlsx
 ++Зависимости службы не обнаружены
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1530
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1670
+++launchSettings.json
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\properties\launchsettings.json
 ++css
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\css\
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\css\
+++Image
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\
 ++js
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\js\
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\js\
 ++lib
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\
+++Picture
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\picture\
 ++favicon.ico
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\favicon.ico
 ++Анализаторы
@@ -91,28 +185,65 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:анализаторы
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:пакеты
 ++Платформы
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:платформы
-++Privacy.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\home\privacy.cshtml
-++_Layout.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_layout.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_validationscriptspartial.cshtml
-++Error.cshtml
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\error.cshtml
+++_Layout.cshtml.css
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_layout.cshtml.css
 ++appsettings.Development.json
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\appsettings.development.json
 ++site.css
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\css\site.css
+++photo_2022-02-14_11-39-07220019942.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07220019942.jpg
+++photo_2022-02-14_11-39-07221238301.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07221238301.jpg
+++photo_2022-02-14_11-39-07222249556.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07222249556.jpg
+++photo_2022-02-14_11-39-07222644721.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07222644721.jpg
+++photo_2022-02-14_11-39-07223156665.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07223156665.jpg
+++photo_2022-02-14_11-39-07224445525.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-14_11-39-07224445525.jpg
+++photo_2022-02-24_22-42-42222200133.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-24_22-42-42222200133.jpg
+++photo_2022-02-24_22-42-42222214367.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-02-24_22-42-42222214367.jpg
+++photo_2022-03-15_16-54-00221839065.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-15_16-54-00221839065.jpg
+++photo_2022-03-15_16-54-00225627152.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-15_16-54-00225627152.jpg
+++photo_2022-03-15_16-54-00225656841.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-15_16-54-00225656841.jpg
+++photo_2022-03-29_16-29-45220213964.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-29_16-29-45220213964.jpg
+++photo_2022-03-29_16-29-45221241055.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-29_16-29-45221241055.jpg
+++photo_2022-03-29_16-29-45223411236.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-29_16-29-45223411236.jpg
+++photo_2022-03-29_16-29-45225958445.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\photo_2022-03-29_16-29-45225958445.jpg
+++зображення_2022-04-10_203104223106437.png
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\зображення_2022-04-10_203104223106437.png
+++зображення_2022-04-10_203319223322290.png
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\зображення_2022-04-10_203319223322290.png
+++зображення_2022-04-10_203542223544499.png
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\зображення_2022-04-10_203542223544499.png
+++зображення_2022-04-10_205339225341229.png
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\зображення_2022-04-10_205339225341229.png
+++зображення_2022-04-21_223042284223044242.png
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\image\зображення_2022-04-21_223042284223044242.png
 ++site.js
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\js\site.js
 ++bootstrap
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\
 ++jquery
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery\
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\jquery\
 ++jquery-validation
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery-validation-unobtrusive\
+++photo_2022-03-29_16-29-45221723767.jpg
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\picture\photo_2022-03-29_16-29-45221723767.jpg
 ++MessagePackAnalyzer
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
 ++Microsoft.AspNetCore.Analyzers
@@ -136,7 +267,7 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\program files\dotnet\sdk\6.0.200\sdk
 ++Microsoft.CodeAnalysis.NetAnalyzers
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
 ++Microsoft.EntityFrameworkCore.Analyzers
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microsoft.Extensions.Logging.Generators
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
@@ -144,27 +275,31 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\program files\dotnet\sdk\6.0.200\sdk
 ++System.Text.Json.SourceGeneration
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 ++ClosedXML (0.95.4)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1558
-++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (6.0.3)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1551
-++Microsoft.EntityFrameworkCore (6.0.3)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1552
-++Microsoft.EntityFrameworkCore.Design (6.0.3)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1554
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.3)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1553
-++Microsoft.EntityFrameworkCore.Tools (6.0.3)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1556
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1690
+++EFCore.BulkExtensions (6.4.0)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1715
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1686
+++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1681
+++Microsoft.EntityFrameworkCore (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1682
+++Microsoft.EntityFrameworkCore.Design (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1684
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1683
+++Microsoft.EntityFrameworkCore.Tools (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1688
 ++Microsoft.Extensions.Configuration.Json (6.0.0)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1555
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1557
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1687
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.3)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1689
+++Swashbuckle.AspNetCore (6.3.0)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1685
 ++Microsoft.AspNetCore.App
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\microsoft.netcore.app
-++_Layout.cshtml.css
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\shared\_layout.cshtml.css
 ++dist
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery\dist\
@@ -198,6 +333,7 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 ++jquery.min.js
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery\dist\jquery.min.js
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\jquery\jquery.min.js
 ++additional-methods.min.js
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
 ++jquery.validate.min.js
@@ -284,7 +420,11 @@ i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++BookingController1.cs
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\controllers\bookingcontroller1.cs
-++BookingController1
-i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\views\bookingcontroller1\
+++CommonMethod.cs
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\models\commonmethod.cs
+++OfficeOpenXml.Core.ExcelPackage (1.0.0)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1765
+++EPPlus (6.0.4)
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:>1766
+++libman.json
+i:{8c1ed101-4826-4d4c-a40e-16659978d64f}:c:\users\administrator\source\repos\git\1.3\aspconnectio\webapplication2\libman.json
